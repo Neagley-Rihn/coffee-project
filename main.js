@@ -1,11 +1,7 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '';
-    html += '' + coffee.name + '';
-    html += ' ' + coffee.roast + '';
-    html += '';
-
+    var html = coffee.name.fontsize(5) + " "  + coffee.roast.fontsize(2).fontcolor("gray") + '';
     return html;
 }
 
