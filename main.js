@@ -1,7 +1,12 @@
 "use strict"
 
+
 function renderCoffee(coffee) {
-    var html = coffee.name.fontsize(5) + " "  + coffee.roast.fontsize(2).fontcolor("gray") + '';
+    var html = '<div>';
+        html += '<div class="col-6 float-left"><span class="coffee_name">' + coffee.name.fontsize(5) + '</span>';
+        html += '<span class="coffee_roast">' + coffee.roast.fontsize(2).fontcolor("gray") + '</span></div>';
+         html += '</div>';
+
     return html;
 }
 
@@ -43,10 +48,25 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+// var allCoffees = [];
+//
+// // on page load, save all the coffees
+// allCoffees = coffees.forEach(function(coffee) {
+//     allCoffees.push(coffee);
+// console.log(allCoffees)
+// });
+
 var div = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
 div.innerHTML = renderCoffees(coffees);
+
+roastSelection.addEventListener("change", updateCoffees);
+
+
+document.getElementById("coffeeAll").addEventListener("click", function () {
+    div.innerHTML = renderCoffees(coffees);
+});
 
 submitButton.addEventListener('click', updateCoffees);

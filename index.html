@@ -8,60 +8,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container col-12 ">
-    <h1 class="text-center">Coffee!</h1>
-    <hr>
-    <div class="row">
+    <div class="container-fluid">
+        <h1 class="text-center">Coffee!</h1>
+        <hr>
+        <div class="row">
 
-            <!-- Coffee Type Section -->
-            <div class="col-6" >
-                <div class="row mx-1" id="coffees">
+                <!-- Coffee Type Section -->
+
+                <div class="col-6" id="coffees">
 
                 </div>
 
-            </div>
 
 
-
-        <!-- Input Section -->
-            <div class="col-6">
-                <div class="form-group">
-                    <form>
-                        <div class="text-left form-check-label font-weight-bold">
-                            <label for="roast-selection">Roast</label>
-                        </div>
-                        <select id="roast-selection" class="w-100 form-control">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <div class="text-left form-check-label mt-2 font-weight-bold">
-                            <label for="coffeeSelector">Coffee Name</label>
-                        </div>
-                        <input type="text" id="coffeeSelector" class="w-100 form-control">
-                        <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
-                    </form>
-                    <hr>
-                    <h2 class="text-center">Add a Coffee</h2>
-                    <form>
-                        <div class="text-left form-check-label font-weight-bold">
-                            <label for="roast-selection">Roast</label>
-                        </div>
-                        <select id="roast-selection" class="w-100 form-control">
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <div class="text-left form-check-label mt-2 font-weight-bold">
-                            <label for="coffeeAddition">Coffee Name</label>
-                        </div>
-                        <input type="text" id="coffeeAddition" class="w-100 form-control">
-                        <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
-                    </form>
+            <!-- Input Section -->
+                <div class="col-6">
+                    <div class="form-group">
+                        <form>
+                            <div class="text-left form-check-label font-weight-bold">
+                                <label for="roast-selection">Roast</label>
+                            </div>
+                            <select id="roast-selection" class="w-100 form-control">
+                                <option id="coffeeAll">all</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <div class="text-left form-check-label mt-2 font-weight-bold">
+                                <label for="coffeeSelector">Coffee Name</label>
+                            </div>
+                            <input type="text" id="coffeeSelector" class="w-100 form-control">
+                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
+                        </form>
+                        <hr>
+                        <h2 class="text-center">Add a Coffee</h2>
+                        <form>
+                            <div class="text-left form-check-label font-weight-bold">
+                                <label for="roast-selection">Roast</label>
+                            </div>
+                            <select id="roast-selection" class="w-100 form-control">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <div class="text-left form-check-label mt-2 font-weight-bold">
+                                <label for="coffeeAddition">Coffee Name</label>
+                            </div>
+                            <input type="text" id="coffeeAddition" class="w-100 form-control">
+                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-</div>
+    </div>
+
 
 
 
