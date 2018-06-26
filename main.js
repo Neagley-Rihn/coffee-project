@@ -40,7 +40,10 @@ function updateCoffees(e) {
 
     if (selectedRoast === "all") {
         coffees.forEach(function(coffees) {
-            filteredCoffees.push(coffees);
+            if (coffees.name.toLowerCase().match(coffee_name.toLowerCase())){
+
+                filteredCoffees.push(coffees);
+            }
         });
 
     }
@@ -88,7 +91,7 @@ var coffees = [
 function newCoffeeSubmition(){
     var coffeeName = document.getElementById("coffeeAddition").value;
     var coffeeRoast = document.getElementById("roast-selection-add").value;
-    var coffeeIDs = coffees.length;
+    var coffeeIDs = coffees.length + 1;
     var newCoffee = {
         id: coffeeIDs,
         name: coffeeName,
