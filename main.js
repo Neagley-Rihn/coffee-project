@@ -3,10 +3,9 @@
 
 function renderCoffee(coffee) {
     var html = '<div>';
-        html += '<div class="col-6 float-left"><span class="coffee_name">' + coffee.name.fontsize(5) + '</span>';
-        html += '<span class="coffee_roast">' + coffee.roast.fontsize(2).fontcolor("gray") + '</span></div>';
+        html += '<div class="col-6 float-left"><span class="coffee_name">' + coffee.name + '</span>';
+        html += '<span class="coffee_roast">' + coffee.roast + '</span></div>';
          html += '</div>';
-
     return html;
 }
 
@@ -70,3 +69,15 @@ document.getElementById("coffeeAll").addEventListener("click", function () {
 });
 
 submitButton.addEventListener('click', updateCoffees);
+
+
+function searchCoffees(value){
+    var filteredCoffees =[];
+    for (var i=0; i < coffees.length; i++){
+        if (coffees[i].name.toLowerCase().indexOf(value.toLowerCase())) {
+            filteredCoffees.push(coffees[i]);
+        }
+    }
+    div.innerHTML= renderCoffee(filteredCoffees);
+}
+
