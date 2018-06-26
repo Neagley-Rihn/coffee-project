@@ -9,6 +9,11 @@ td, th {
 }
 
 
+.coffee_name {
+    font-size:2em;
+    font-weight: bold;
+}
+
 .coffee_roast {
     margin: .5em 1em;
     color: grey;

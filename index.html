@@ -35,10 +35,10 @@
                                 <option>dark</option>
                             </select>
                             <div class="text-left form-check-label mt-2 font-weight-bold">
-                                <label for="coffeeSelector">Coffee Name</label>
+                                <label for="coffee_name">Coffee Name</label>
                             </div>
-                            <input type="text" id="coffeeSelector" class="w-100 form-control" onkeyup="searchCoffees(value)">
-                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
+                            <input type="text" id="coffee_name" class="w-100 form-control">
+                            <input id="noSubmit" type="submit" class="w-100 btn btn-primary mt-3">
                         </form>
                         <hr>
                         <h2 class="text-center">Add a Coffee</h2>
@@ -46,7 +46,7 @@
                             <div class="text-left form-check-label font-weight-bold">
                                 <label for="roast-selection">Roast</label>
                             </div>
-                            <select id="roast-selection" class="w-100 form-control">
+                            <select id="roast-selection-add" class="w-100 form-control">
                                 <option>light</option>
                                 <option>medium</option>
                                 <option>dark</option>
@@ -55,21 +55,12 @@
                                 <label for="coffeeAddition">Coffee Name</label>
                             </div>
                             <input type="text" id="coffeeAddition" class="w-100 form-control">
-                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3">
+                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3" onclick="newCoffeeSubmition()">
                         </form>
                     </div>
                 </div>
             </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -87,26 +78,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <!--<script>-->
-        <!--function searchCoffee(value) {-->
-            <!--// Declare variables-->
-            <!--var input, filter, ul, li, a, i;-->
-            <!--input = document.getElementById('coffeeSelector');-->
-            <!--console.log(input.value);-->
-            <!--filter = input.value.toUpperCase();-->
-            <!--ul = document.getElementById("coffee");-->
-            <!--// li = ul.getElementsByTagName('coffee');-->
-            <!--// Loop through all list items, and hide those who don't match the search query-->
-            <!--for (i = 0; i < ul.length; i++) {-->
-                <!--a = ul[i].getElementsByTagName("a")[0];-->
-                <!--if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {-->
-                    <!--ul[i].style.display = "";-->
-                <!--} else {-->
-                    <!--ul[i].style.display = "none";-->
-                <!--}-->
-            <!--}-->
-        <!--}-->
-    <!--</script>-->
 
 </body>
 </html>
