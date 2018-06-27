@@ -86,7 +86,7 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-
+var storedCoffees = JSON.parse(localStorage.getItem("coffees"));
 
 function newCoffeeSubmition(){
     var coffeeName = document.getElementById("coffeeAddition").value;
@@ -100,8 +100,7 @@ function newCoffeeSubmition(){
     coffees.push(newCoffee);
     localStorage.setItem("coffees", JSON.stringify(coffees));
     document.getElementById("coffees").innerHTML = coffees;
-    // console.log(coffeeName);
-    // console.log(coffees);
+
 }
 
 // var allCoffees = [];
@@ -116,7 +115,7 @@ var div = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
-div.innerHTML = renderCoffees(coffees);
+div.innerHTML = renderCoffees(storedCoffees);
 
 roastSelection.addEventListener("change", updateCoffees);
 
@@ -139,5 +138,9 @@ document.getElementById("coffee_name").addEventListener("keyup", updateCoffees);
 //     div.innerHTML= renderCoffee(filteredCoffees);
 // }
 console.log(coffees);
-var storedCoffees = JSON.parse(localStorage.getItem("coffees"));
+if (coffees.length < 14){
+    div.innerHTML = renderCoffees(coffees);
+}else{
+    div.innerHTML = renderCoffees(storedCoffees);
+}
 console.log(storedCoffees);
