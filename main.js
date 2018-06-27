@@ -62,7 +62,6 @@ function updateCoffees(e) {
     }else{
         coffees.forEach((function (coffee) {
             if (coffee.name.toLowerCase().match(coffee_name.toLowerCase())){
-
                 filteredCoffees.push(coffee);
             }
         }))

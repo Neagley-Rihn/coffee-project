@@ -5,18 +5,77 @@ body{
     color: white;
 }
 
-h1,h2{
+h1{
     font-family: 'Courgette', cursive;
+    font-size: 5em;
+    text-shadow: 4px 4px purple, 5px 1px  20px blue;
+
+
+}
+
+h2 {
+    font-family: 'Courgette', cursive;
+
 }
 
 
+hr {
+    color: blue;
+}
 
 .coffee_name {
+    font-family: "AppleGothic";
     font-size:2em;
     font-weight: bold;
+    text-shadow: 4px 4px purple;
 }
 
 .coffee_roast {
     margin: .5em 1em;
     color: white;
+}
+
+
+.coffee_search {
+    background-image: url("img/magnifyGlass.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding: 12px 12px 12px 40px;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#coffeeAddition {
+    background-image: url("img/coffeeCupsm.png");
+    box-shadow: 5px 5px 5px black;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    padding: 12px 12px 12px 50px;
+
+}
+
+#roast-selection {
+    box-shadow: 5px 5px 5px black;
+}
+
+#roast-selection-add {
+    box-shadow: 5px 5px 5px black;
+}
+
+#submit, #noSubmit {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    padding: 20px 70px;
+    font-size: 24px;
+    border: 1px solid #2d6898;
+    -webkit-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+    box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
