@@ -1,12 +1,14 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+
+body{
+    background: url("img/coffee-3.jpg") fixed;
+    background-size: cover;
+    color: white;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+h1,h2{
+    font-family: 'Courgette', cursive;
 }
+
 
 
 .coffee_name {
@@ -16,5 +18,5 @@ td, th {
 
 .coffee_roast {
     margin: .5em 1em;
-    color: grey;
+    color: white;
 }

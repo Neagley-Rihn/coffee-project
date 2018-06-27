@@ -4,63 +4,63 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container-fluid">
-        <h1 class="text-center">Coffee!</h1>
-        <hr>
-        <div class="row">
+            <h1 class="text-center">Lava Java Beans!</h1>
+            <hr>
+            <div class="row">
 
-                <!-- Coffee Type Section -->
+                    <!-- Coffee Type Section -->
 
-                <div class="col-6" id="coffees">
+                    <div class="col-6 custom-box" id="coffees">
 
-                </div>
+                    </div>
 
 
 
-            <!-- Input Section -->
-                <div class="col-6">
-                    <div class="form-group">
-                        <form>
-                            <div class="text-left form-check-label font-weight-bold">
-                                <label for="roast-selection">Roast</label>
-                            </div>
-                            <select id="roast-selection" class="w-100 form-control">
-                                <option id="coffeeAll">all</option>
-                                <option>light</option>
-                                <option>medium</option>
-                                <option>dark</option>
-                            </select>
-                            <div class="text-left form-check-label mt-2 font-weight-bold">
-                                <label for="coffee_name">Coffee Name</label>
-                            </div>
-                            <input type="text" id="coffee_name" class="w-100 form-control">
-                            <input id="noSubmit" type="submit" class="w-100 btn btn-primary mt-3">
-                        </form>
-                        <hr>
-                        <h2 class="text-center">Add a Coffee</h2>
-                        <form>
-                            <div class="text-left form-check-label font-weight-bold">
-                                <label for="roast-selection">Roast</label>
-                            </div>
-                            <select id="roast-selection-add" class="w-100 form-control">
-                                <option>light</option>
-                                <option>medium</option>
-                                <option>dark</option>
-                            </select>
-                            <div class="text-left form-check-label mt-2 font-weight-bold">
-                                <label for="coffeeAddition">Coffee Name</label>
-                            </div>
-                            <input type="text" id="coffeeAddition" class="w-100 form-control">
-                            <input id="submit" type="submit" class="w-100 btn btn-primary mt-3" onclick="newCoffeeSubmition()">
-                        </form>
+                <!-- Input Section -->
+                    <div class="col-6">
+                        <div class="form-group">
+                            <form>
+                                <div class="text-left form-check-label font-weight-bold">
+                                    <label for="roast-selection">Roast</label>
+                                </div>
+                                <select id="roast-selection" class="w-100 form-control">
+                                    <option id="coffeeAll">all</option>
+                                    <option>light</option>
+                                    <option>medium</option>
+                                    <option>dark</option>
+                                </select>
+                                <div class="text-left form-check-label mt-2 font-weight-bold">
+                                    <label for="coffee_name">Coffee Name</label>
+                                </div>
+                                <input type="text" id="coffee_name" class="w-100 form-control">
+                                <input id="noSubmit" type="submit" class="w-100 btn btn-primary mt-3">
+                            </form>
+                            <hr>
+                            <h2 class="text-center">Add a Coffee</h2>
+                            <form>
+                                <div class="text-left form-check-label font-weight-bold">
+                                    <label for="roast-selection">Roast</label>
+                                </div>
+                                <select id="roast-selection-add" class="w-100 form-control">
+                                    <option>light</option>
+                                    <option>medium</option>
+                                    <option>dark</option>
+                                </select>
+                                <div class="text-left form-check-label mt-2 font-weight-bold">
+                                    <label for="coffeeAddition">Coffee Name</label>
+                                </div>
+                                <input type="text" id="coffeeAddition" class="w-100 form-control">
+                                <input id="submit" type="submit" class="w-100 btn btn-primary mt-3" onclick="newCoffeeSubmition()">
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </div>
+        </div>
 
 
 
@@ -77,6 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="main.js"></script>
 
 </body>
