@@ -92,18 +92,14 @@ function newCoffeeSubmition(){
 }
 
 
-
 div.innerHTML = renderCoffees(coffees);
 
+
+// Changes coffee options based on roast type
 roastSelection.addEventListener("change", updateCoffees);
 
-
-document.getElementById("coffeeAll").addEventListener("click", function () {
-    div.innerHTML = renderCoffees(coffees);
-});
-
+// Once added coffee, submits to the array and stores to session storage.
 submitButton.addEventListener('click', updateCoffees);
-
 document.getElementById("coffee_name").addEventListener("keyup", updateCoffees);
 
 
