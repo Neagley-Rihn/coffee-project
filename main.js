@@ -98,7 +98,7 @@ function newCoffeeSubmition(){
         roast: coffeeRoast
     };
     coffees.push(newCoffee);
-    localStorage.setItem("coffees", JSON.stringify("coffees"));
+    localStorage.setItem("coffees", JSON.stringify(coffees));
     document.getElementById("coffees").innerHTML = coffees;
     // console.log(coffeeName);
     // console.log(coffees);
@@ -138,6 +138,6 @@ document.getElementById("coffee_name").addEventListener("keyup", updateCoffees);
 //     }
 //     div.innerHTML= renderCoffee(filteredCoffees);
 // }
-
+console.log(coffees);
 var storedCoffees = JSON.parse(localStorage.getItem("coffees"));
 console.log(storedCoffees);
