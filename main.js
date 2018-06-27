@@ -1,4 +1,7 @@
 "use strict"
+
+
+
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -50,16 +53,15 @@ function updateCoffees(e) {
                 filteredCoffees.push(coffees);
             }
         });
-
     }
-
     else if(coffee_name === ""){
         coffees.forEach(function(coffee) {
             if (coffee.roast === selectedRoast) {
                 filteredCoffees.push(coffee);
             }
         })
-    }else{
+    }
+    else{
         coffees.forEach((function (coffee) {
             if (coffee.name.toLowerCase().match(coffee_name.toLowerCase())){
                 filteredCoffees.push(coffee);
@@ -74,7 +76,6 @@ function updateCoffees(e) {
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
-var storedCoffees = JSON.parse(sessionStorage.getItem("coffees"));
 
 function newCoffeeSubmition(){
     var coffeeName = document.getElementById("coffeeAddition").value;
@@ -86,10 +87,13 @@ function newCoffeeSubmition(){
         roast: coffeeRoast
     };
     coffees.push(newCoffee);
-    sessionStorage.setItem("coffees", JSON.stringify(coffees));
+    sessionStorage.setItem("coffees", JSON.stringify(coffees));   // Saves the new coffee object/data for storage
     document.getElementById("coffees").innerHTML = coffees;
 
 }
+
+
+var storedCoffees = JSON.parse(sessionStorage.getItem("coffees"));
 
 
 div.innerHTML = renderCoffees(coffees);
@@ -100,8 +104,12 @@ roastSelection.addEventListener("change", updateCoffees);
 
 // Once added coffee, submits to the array and stores to session storage.
 submitButton.addEventListener('click', updateCoffees);
+
+
 document.getElementById("coffee_name").addEventListener("keyup", updateCoffees);
 
+// if the Stored coffee list is under 14, the initial array, calls the original
+// otherwise, pulls from the stored coffee variable/array.
 
 if (storedCoffees.length < 15){
     div.innerHTML = renderCoffees(coffees);

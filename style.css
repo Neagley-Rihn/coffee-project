@@ -9,7 +9,10 @@ h1{
     font-family: 'Courgette', cursive;
     font-size: 5em;
     text-shadow: 4px 4px purple, 5px 1px  20px blue;
-
+    background-image: url("https://media.giphy.com/media/26DMVNX3IsNgECOM8/giphy.gif"), url("https://media.giphy.com/media/3o751PSGtjAztMgSas/giphy.gif");
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 100px;
 
 }
 
@@ -57,7 +60,7 @@ hr:before {
 }
 
 .coffee_roast {
-    margin: .5em 1em;
+    margin: 1em 1em;
     color: white;
 }
 
@@ -70,6 +73,13 @@ hr:before {
     padding: 12px 12px 12px 40px;
     font-size: 16px;
     box-shadow: 5px 5px 5px black;
+}
+
+.footer {
+    height: 100px;
+    background-image: url("https://i.gifer.com/Y8HM.gif");
+    background-repeat: no-repeat;
+    background-size: 100px;
 }
 
 
